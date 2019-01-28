@@ -1,0 +1,25 @@
+#include<stdio.h>
+int input()
+{
+int a;
+printf("enter a num");
+scanf("%d",&a);
+return a;
+}
+int compute(int b)
+{
+b=b+1;
+return b;
+}
+void output(int b)
+{
+printf("new num%d",b);
+}
+
+void main()
+{
+int x,y;
+x=input();
+y=compute(x);
+output(y);
+}
