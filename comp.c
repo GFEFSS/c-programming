@@ -10,10 +10,12 @@ int compute(int a ,int b)
 	else 
 	return b;
 }
-
+void output(int h)
+{	printf("smallest num is %d",h);
+}
 int main()
 {	int x,y,z;
 	input(&x,&y);
-	compute(x,y);
-	
+	z=compute(x,y);
+	output(z);	
 }
