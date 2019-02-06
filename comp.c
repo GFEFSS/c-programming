@@ -1,16 +1,19 @@
 #include<stdio.h>
 int input(int *a,int *b)
-{	printf("enter 2 num");
+{	printf("enter two num");
 	scanf("%d%d",a,b);
 }
-void result(int a,int b)
-{	if(a<b)
-	printf("%d is smallest",a);
-	else
-	printf("%d is smallest",b);
+int compute(int a ,int b)
+{	
+	if(a<b)
+	return a;
+	else 
+	return b;
 }
+
 int main()
-{	int x,y;
+{	int x,y,z;
 	input(&x,&y);
-	result(x,y);
+	compute(x,y);
+	
 }
