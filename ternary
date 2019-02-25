@@ -1,0 +1,21 @@
+#include<stdio.h>
+int input(int *a,int *b,int *c)
+{ printf("enter three num");
+ scanf("%d%d%d",a,b,c);
+}
+int compute(int a,int b,int c)
+{
+int min;
+min=(a<b)?((a<c)?a:c):((b<c)?b:c);
+return min;
+}
+int output(int h)
+{printf("minimum=%d",h);
+}
+int main()
+{
+ int x,y,z,l;
+ input(&x,&y,&z);
+ l=compute(x,y,z);
+ output(l);
+}
